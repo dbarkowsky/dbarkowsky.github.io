@@ -1,5 +1,7 @@
 "use client"
 import NavBar from '@/components/NavBar'
+import Container from '@mui/material/Container';
+
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -7,8 +9,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head />
       <body>
-        <NavBar/>
-        {children}
+        <Container maxWidth="md">
+          <NavBar/>
+          {children}
+        </Container>
       </body>
     </html>
   )

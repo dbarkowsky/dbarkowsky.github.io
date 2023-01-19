@@ -9,7 +9,7 @@ const NavBarLink = ({href, text}) => {
             flexGrow: 0,
             color: "white" }
             }>
-        {text}
+        <b>{text}</b>
     </Button>);
 }
 
