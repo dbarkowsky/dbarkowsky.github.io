@@ -1,10 +1,10 @@
 import styles from './page.module.css'
-import Hi from '@/pages/hi'
+import Landing from './landing/page'
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Hi />
+      <Landing />
     </main>
   )
 }
