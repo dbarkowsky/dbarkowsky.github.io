@@ -7,8 +7,8 @@ const NavBarLink = ({href, text}) => {
         href={href} 
         sx={{ 
             flexGrow: 0,
-            color: "white" }
-            }>
+            color: "white", 
+        }}>
         <b>{text}</b>
     </Button>);
 }

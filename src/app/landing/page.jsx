@@ -9,7 +9,8 @@ const Landing = () => (<>
             variant='button'
             align='center'
             sx={{
-                fontSize: "1.5em"
+                fontSize: "1.5em",
+                fontFamily: 'Passion One, sans-serif'
             }}
         >DIVE IN</Typography>
     </Button>
