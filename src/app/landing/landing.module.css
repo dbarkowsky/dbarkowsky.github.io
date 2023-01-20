@@ -8,6 +8,7 @@
     background-image: url("/landing/2021-09-18.3.jpg");
     background-position: center;
     background-size: cover;
+    opacity: 0.4;
 }
 
 .diveButton {
@@ -16,14 +17,20 @@
     top: 40vh;
     width: fit-content;
     margin: auto;
-    align-items: center;
     color: beige;
     border: 3px solid beige;
-    font-size: 1.5em;
 }
 
 .diveButton:hover {
     color: rgb(11, 34, 11);
     background-color: beige;
     border: 3px solid rgb(11, 34, 11);
+}
+
+.splashWord {
+    position: relative;
+    display: block;
+    top: 30vh;
+    color: beige;
+    text-align: center;
 }

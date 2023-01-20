@@ -1,10 +1,18 @@
 "use client"
-
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import styles from './landing.module.css'
 const Landing = () => (<>
     <div className={styles.splashBackground}></div>
-    <Button variant="outlined" className={styles.diveButton} href="/about"> DIVE IN </Button>
+    <Typography variant="h4" className={styles.splashWord}>Dylan Barkowsky</Typography>
+    <Button variant="outlined" className={styles.diveButton} href="/about"> 
+        <Typography 
+            variant='button'
+            align='center'
+            sx={{
+                fontSize: "1.5em"
+            }}
+        >DIVE IN</Typography>
+    </Button>
 </>
     
 );
