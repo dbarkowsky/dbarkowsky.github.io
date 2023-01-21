@@ -4,6 +4,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 import colours from '../../components/Colours';
 import EducationBlock from '@/components/resume/EducationBlock';
 import JobBlock from '@/components/resume/JobBlock';
+import jobs from '@/data/jobs';
+import education from '@/data/education';
 
 const Resume = () => {
     return (
@@ -14,28 +16,43 @@ const Resume = () => {
             <Grid xs={12} sx={{
                 borderBottom: `1px solid ${colours.darkBackground}`
             }}>
-                <EducationBlock 
-                    certificate={"Information & Computer Systems Diploma"}
-                    issuer={"Camosun College"}
-                    date={"2023"}
-                    blurb={"This is a blurb"}
-                />
+                {
+                    education
+                    .sort((a, b) => {
+                        // Sort by importance first, then descending date
+                        if (a.importance === b.importance){
+                            return b.date - a.date;
+                        }
+                        return b.importance - a.importance;
+                    }).map(item => (
+                        <EducationBlock
+                            key={item.certificate}
+                            certificate={item.certificate}
+                            issuer={item.issuer}
+                            date={item.date}
+                            blurb={item.blurb}
+                        />
+                    ))
+                }
             </Grid>
             <Grid xs={12} sx={{
                 borderBottom: `1px solid ${colours.darkBackground}`
             }}>
-                <JobBlock 
-                    title={"Parking Ambassador"}
-                    employer={"City of Victoria"}
-                    location={"Victoria, BC"}
-                    startDate={"2017/08"}
-                    endDate={"2020/02"}
-                    points={[
-                        "Identifying and enforcing parking-related infractions",
-                        "Educating the public and responding to inquiring",
-                        "De-escalating high-conflict scenarios"
-                    ]}
-                />
+                {
+                    jobs
+                    .sort((a, b) => b.startDate - a.startDate)
+                    .map(job => (
+                        <JobBlock
+                            key={job.title}
+                            title={job.title}
+                            employer={job.employer}
+                            location={job.location}
+                            startDate={job.startDate}
+                            endDate={job.endDate}
+                            points={job.points}
+                        />
+                    ))
+                }
             </Grid>
         </Grid>
     );
