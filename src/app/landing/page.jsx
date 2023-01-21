@@ -1,7 +1,7 @@
 "use client"
 import { Typography } from '@mui/material';
 import colours from '../../components/Colours';
-import CentreButton from '@/components/CentreButton';
+import CentreButton from '@/components/common/CentreButton';
 
 const Landing = () => {
     const splashBackgroundStyle = {

@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import colours from './Colours';
+import colours from '../Colours';
 
 
 const HighlightBoxVideo = ({title, text, videoSrc}) => {

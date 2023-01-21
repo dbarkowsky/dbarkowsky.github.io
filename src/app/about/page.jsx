@@ -2,8 +2,8 @@
 
 import Grid from '@mui/material/Unstable_Grid2';
 import colours from '../../components/Colours';
-import HighlightBox from '@/components/HighlightBox';
-import HighlightBoxVideo from '@/components/HighlightBoxVideo';
+import HighlightBox from '@/components/common/HighlightBox';
+import HighlightBoxVideo from '@/components/common/HighlightBoxVideo';
 
 const About = () => {
     return (

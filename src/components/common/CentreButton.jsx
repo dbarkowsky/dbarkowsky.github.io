@@ -1,5 +1,5 @@
 import { Typography, Button } from "@mui/material";
-import colours from './Colours';
+import colours from '../Colours';
 
 const CentreButton = ({text}) => {
     const ButtonStyle = {
