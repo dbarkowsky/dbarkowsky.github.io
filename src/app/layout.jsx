@@ -1,5 +1,5 @@
 "use client"
-import NavBar from '@/components/Navigation/NavBar'
+import NavBar from '@/components/navigation/NavBar'
 import Container from '@mui/material/Container';
 import colours from '../components/Colours';
 import './globals.css'

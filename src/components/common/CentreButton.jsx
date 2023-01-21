@@ -21,7 +21,7 @@ const CentreButton = ({text}) => {
                 border: `3px solid ${colours.lightText}`,
                 '&:hover': {
                     color: colours.darkText,
-                    border: `3px solid ${colours.darkText}`,
+                    border: `3px solid ${colours.lightText}`,
                     backgroundColor: colours.lightBackground
                 }
             }}> 
