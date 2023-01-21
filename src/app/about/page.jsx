@@ -1,10 +1,14 @@
 "use client"
 
 import Grid from '@mui/material/Unstable_Grid2';
+import colours from '../../components/Colours';
 
 const About = () => {
     return (
-        <Grid container spacing={2} padding="2em">
+        <Grid container spacing={2} padding="2em" sx={{
+            backgroundColor: colours.containerBackground,
+            margin: 0
+        }}>
             <Grid xs={12}>
                 Testing
             </Grid>
