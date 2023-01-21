@@ -1,7 +1,5 @@
 import { Typography, Button } from "@mui/material";
 import colours from './Colours';
-import { useState } from "react";
-
 
 const CentreButton = ({text}) => {
     const ButtonStyle = {
