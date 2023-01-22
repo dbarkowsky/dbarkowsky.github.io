@@ -3,12 +3,8 @@ import ProgressBar from "@ramonak/react-progress-bar";
 import colours from "../Colours";
 
 const SkillBlock = ({skill}) => {
-    const noTopPaddingStyle ={
-        paddingTop: '0'
-    }
-
     const {name, rating} = skill;
-
+    const maxRating = 5;
     return (
         <Grid container spacing={0.5}>
             <Grid xs={12} >
@@ -17,12 +13,15 @@ const SkillBlock = ({skill}) => {
             <Grid xs={12}>
                 <ProgressBar 
                     completed={rating} 
-                    maxCompleted={5} 
+                    maxCompleted={maxRating} 
                     width={'70%'}
                     bgColor={colours.highlight}
                     baseBgColor={colours.darkBackground}
                     borderRadius={'5px'}
-                    isLabelVisible={false}
+                    isLabelVisible={true}
+                    customLabel={`${rating}/${maxRating}`}
+                    labelAlignment={'left'}
+                    labelColor={colours.lightText}
                 />
             </Grid>
         </Grid>
