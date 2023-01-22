@@ -10,9 +10,7 @@ const SkillBlock = ({skill}) => {
     const {name, rating} = skill;
 
     return (
-        <Grid container spacing={0.5} sx={{
-            margin: 0
-        }}>
+        <Grid container spacing={0.5}>
             <Grid xs={12} >
                 {name}
             </Grid>
