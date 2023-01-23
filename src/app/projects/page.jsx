@@ -17,7 +17,14 @@ const Projects = () => {
         }}>
             <Grid xs={12} sx={noPaddingStyle}>
             <Divider textAlign="left" sx={{ fontSize: '16pt', margin: '1em 0' }}>2023</Divider>
-                <PostBlock {...post}/>
+                <Grid container spacing={2} sx={noPaddingStyle}>
+                    <Grid xs={12} sm={6} md={4}><PostBlock {...post}/></Grid>
+                    <Grid xs={12} sm={6} md={4}><PostBlock {...post}/></Grid>
+                    <Grid xs={12} sm={6} md={4}><PostBlock {...post}/></Grid>
+                    <Grid xs={12} sm={6} md={4}><PostBlock {...post}/></Grid>
+                    <Grid xs={12} sm={6} md={4}><PostBlock {...post}/></Grid>
+                </Grid>
+                
             </Grid>
         </Grid>
     );
