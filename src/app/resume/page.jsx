@@ -30,7 +30,7 @@ const Resume = () => {
     }
 
     return (
-        <Grid container spacing={2} padding="2em" sx={{
+        <Grid container spacing={2} padding="1em" sx={{
             backgroundColor: colours.lightBackground,
             margin: 0,
         }}>
