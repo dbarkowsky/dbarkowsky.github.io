@@ -25,7 +25,7 @@ const NavBar = () => {
               </IconButton>
               <NavBarLink href={"/about"} text={"About"} />
               <NavBarLink href={"/resume"} text={"Resume"} />
-              <NavBarLink href={"/projects"} text={"Projects"} />
+              <NavBarLink href={"/blog"} text={"Blog"} />
             </Toolbar>
           </AppBar>
         </Box>
