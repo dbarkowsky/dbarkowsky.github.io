@@ -8,49 +8,81 @@ import jobs from '@/data/jobs';
 import education from '@/data/education';
 import { soft, software, technical } from '@/data/skills';
 import SkillBlock from '@/components/resume/SkillBlock';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
+import Link from 'next/link';
+import { IconButton } from '@mui/material';
 
 const Resume = () => {
     const verticalSectionStyle = {
         borderBottom: `1px solid ${colours.darkBackground}`
     }
 
-    const headingMarginKiller = { marginTop: '0', marginBottom: '0' }
+    const headingMarginKiller = { marginTop: '0', marginBottom: '0.5em' }
 
     const sortByRating = (a, b) => b.rating - a.rating;
+
+    const smallIconStyle = { 
+        verticalAlign: 'middle',
+        paddingRight: '5px'
+    }
 
     return (
         <Grid container spacing={2} padding="2em" sx={{
             backgroundColor: colours.lightBackground,
             margin: 0,
         }}>
+            <Grid xs={12} >
+                <h1 style={headingMarginKiller}>Dylan Barkowsky</h1> 
+            </Grid>
+            <Grid container spacing={2} xs={12} padding="0 1em" sx={{
+                fontSize: '12pt'
+            }}> 
+                <Grid xs={12} >
+                    <span>Looking for a PDF? Download a copy <a href={'/resume/Resume.pdf'}>here</a>.</span>
+                </Grid>
+                <Grid xs={12} md={5} sx={{ lineHeight: '10px', alignItems: 'center'}}>
+                    <EmailIcon sx={smallIconStyle}/>
+                    <span style={{marginBottom: '10px'}}>dylanbarkowsky@gmail.com</span>
+                </Grid>
+                <Grid xs={12} md={3}>
+                    <PhoneIcon sx={smallIconStyle}/>
+                    780.237.5172
+                </Grid>
+            </Grid>
             <Grid xs={12}>
-                <h1 style={headingMarginKiller}>Dylan Barkowsky</h1>
-                <p>Looking for a PDF? Download a copy <a href={'/resume/Resume.pdf'}>here</a>.</p>
+                <Link href='https://github.com/dbarkowsky'>
+                    <IconButton size='large'>
+                        <GitHubIcon fontSize='large' />
+                    </IconButton>
+                </Link>
+                <Link href='https://www.linkedin.com/in/dylan-barkowsky-93469370/'>
+                    <IconButton size='large'>
+                        <LinkedInIcon fontSize='large'/>
+                    </IconButton>
+                </Link>
+                
             </Grid>
-            <Grid xs={12} md={6}>
-                {/* Contact Info */}
-            </Grid>
-            <Grid xs={12} md={6}>
-                {/* Links to github, linkedIn */}
-            </Grid>
-            <Grid xs={12} md={4}>
-                <h3>Technical Skills</h3>
+            <Grid xs={12} sm={4}>
+                <h3 style={headingMarginKiller}>Technical Skills</h3>
                 {
                     technical
                         .sort(sortByRating)
                         .map((skill, index) => <SkillBlock key={index} {...{skill}}/>)
                 }
             </Grid>
-            <Grid xs={12} md={4}>
-                <h3>Software Skills</h3>
+            <Grid xs={12} sm={4}>
+                <h3 style={headingMarginKiller}>Software Skills</h3>
                 {
                     software
                         .sort(sortByRating)
                         .map((skill, index) => <SkillBlock key={index} {...{skill}}/>)
                 }
             </Grid>
-            <Grid xs={12} md={4}>
-                <h3>Soft Skills</h3>
+            <Grid xs={12} sm={4}>
+                <h3 style={headingMarginKiller}>Soft Skills</h3>
                 {
                     soft
                         .sort(sortByRating)
