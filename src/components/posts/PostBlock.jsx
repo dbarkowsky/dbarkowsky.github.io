@@ -30,8 +30,8 @@ const PostBlock = ({title, date, blurb, paths}) => {
         </CardContent>
         <CardActions>
             <Button size="small" href={paths.post} sx={cardButtonStyle}>More</Button>
-            <Button size="small" href={paths.code} sx={cardButtonStyle}>Code</Button>
-            <Button size="small" href={paths.demo} sx={cardButtonStyle}>Demo</Button>
+            {paths.code ? <Button size="small" href={paths.code} sx={cardButtonStyle}>Code</Button> : <></>}
+            {paths.demo ? <Button size="small" href={paths.demo} sx={cardButtonStyle}>Demo</Button> : <></>}
         </CardActions>
     </Card>
     );
