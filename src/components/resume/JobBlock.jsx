@@ -13,7 +13,7 @@ const JobBlock = ({title, employer, location, startDate, endDate, points}) => {
               <br/>
               {location}
               <br/>
-              {`${startDate.getFullYear()}/${startDate.getMonth()} : ${endDate.getFullYear()}/${endDate.getMonth()}`}
+              {`${startDate.getFullYear()}/${startDate.getMonth()+1} : ${endDate.getFullYear()}/${endDate.getMonth()+1}`}
             </Grid>
             <Grid xs={12} sm={6}>
                 <ul style={{ margin: '0 auto', fontSize: '12pt', paddingLeft: '1em' }}>
