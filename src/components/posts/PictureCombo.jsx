@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Unstable_Grid2/Grid2";
-import TextBlock from "./TextBlock";
 import PictureBlock from "./PictureBlock";
 
 const PictureCombo = ({children, imgPath, subtitle = undefined, side = 'right'}) => {
