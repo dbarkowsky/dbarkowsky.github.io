@@ -1,44 +1,15 @@
 const posts = [
     {
-        title: 'First Post',
-        date: new Date('2023-01-23'),
-        blurb: 'Check out this post. It is a tester for the card component.',
+        title: 'mp3 Sorter',
+        date: new Date('2021-12-31'),
+        blurb: 'A little project to help sort loose mp3 files into folders.',
         paths: {
-            img: '/landing/2021-09-18.3.jpg',
-            post: '/about',
-            code: 'https://stackoverflow.com/questions/36482126/how-to-enlarge-the-svg-icon-in-material-ui-iconbuttons',
-            demo: 'https://mui.com/material-ui/react-card/'
+            img: '/posts/2021/mp3Sorter/thumb.jpg',
+            post: '/blog/posts/2021/mp3Sorter',
+            code: 'https://github.com/dbarkowsky/mp3_Sorter.git',
         }
     },
-    {
-        title: 'dfsdf Post',
-        date: new Date('2023-01-01'),
-        blurb: 'Check out this post. It is a tester for the card component.',
-        paths: {
-            img: '/landing/2021-09-18.3.jpg',
-            post: '/about',
-            demo: 'https://mui.com/material-ui/react-card/'
-        }
-    },
-    {
-        title: 'Firerst Post',
-        date: new Date('2023-02-23'),
-        blurb: 'Check out this post. It is a tester for the card component.',
-        paths: {
-            img: '/landing/2021-09-18.3.jpg',
-            post: '/about',
-        }
-    },
-    {
-        title: 'First rewrwe',
-        date: new Date('2022-01-23'),
-        blurb: 'Check out this post. It is a tester for the card component.',
-        paths: {
-            img: '/landing/2021-09-18.3.jpg',
-            post: '/about',
-            code: 'https://stackoverflow.com/questions/36482126/how-to-enlarge-the-svg-icon-in-material-ui-iconbuttons',
-        }
-    },
+    
 ]
 
 export default posts;

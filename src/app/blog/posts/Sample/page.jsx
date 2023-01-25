@@ -4,8 +4,9 @@ import Grid from '@mui/material/Unstable_Grid2';
 import colours from '@/components/Colours';
 import PictureBlock from '@/components/posts/PictureBlock';
 import TextBlock from '@/components/posts/TextBlock';
-import PostTitle from '@/components/posts/PostTitle';
+import TitleBlock from '@/components/posts/TitleBlock';
 import PictureCombo from '@/components/posts/PictureCombo';
+import DateBlock from '@/components/posts/DateBlock';
 
 const Sample = () => {
     const noPaddingStyle = { padding: '0' };
@@ -15,7 +16,8 @@ const Sample = () => {
             backgroundColor: colours.lightBackground,
             margin: 0,
         }}>
-            <PostTitle>My Title</PostTitle>
+            <TitleBlock>My Title</TitleBlock>
+            <DateBlock>2023</DateBlock>
             <PictureBlock 
                 path={'/landing/2021-09-18.3.jpg'}
                 subtitle={'Well hello!'}
