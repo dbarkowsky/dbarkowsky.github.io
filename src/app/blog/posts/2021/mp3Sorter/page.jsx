@@ -32,40 +32,38 @@ const MP3Sorter = () => {
             <TextBlock>For my immediate use, this worked like a charm, and I was satisfied—at first. Now I have a to-do list of features that I’m hoping to add.</TextBlock>
 
             <SubtitleBlock>To-Do</SubtitleBlock>
-            <TextBlock>
-                <ul>
-                    <li>
-                        <b>A decent GUI</b>
-                        <ul>
-                            <li>I'm thinking of using 'tkinter' for this.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>An option to select file paths</b>
-                        <ul>
-                            <li>Right now, you place it in the desired folder and run from there.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Album folders</b>
-                        <ul>
-                            <li>Why not? eye3D should continue to be useful here.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Interjections</b>
-                        <ul>
-                            <li>If there’s no metadata, let’s allow the user to add some.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <b>Other filetypes</b>
-                        <ul>
-                            <li>I targeted only mp3 files to keep it simple, but why not expand the scope?</li>
-                        </ul>
-                    </li>
-                </ul>
-            </TextBlock>
+            <ul>
+                <li>
+                    <b>A decent GUI</b>
+                    <ul>
+                        <li>I'm thinking of using 'tkinter' for this.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>An option to select file paths</b>
+                    <ul>
+                        <li>Right now, you place it in the desired folder and run from there.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Album folders</b>
+                    <ul>
+                        <li>Why not? eye3D should continue to be useful here.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Interjections</b>
+                    <ul>
+                        <li>If there’s no metadata, let’s allow the user to add some.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Other filetypes</b>
+                    <ul>
+                        <li>I targeted only mp3 files to keep it simple, but why not expand the scope?</li>
+                    </ul>
+                </li>
+            </ul>
             
             <SubtitleBlock>Update:</SubtitleBlock>
             <TextBlock>I worked on this more over Christmas 2021. You can see the updated post <a href={'/blog/posts/2022/mp3Sorter2'}>at this link.</a></TextBlock>
