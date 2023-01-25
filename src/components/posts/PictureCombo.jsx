@@ -12,11 +12,11 @@ const PictureCombo = ({children, imgPath, subtitle = undefined, side = 'right'})
             return (
                 <Grid container spacing={3} xs={12} 
                     sx={{ margin: '0.75em 0', padding: '0', textAlign: 'justify' }}>
-                    <Grid xs={12} sm={6} sx={noMarginStyle}>
+                    <Grid xs={12} sm={4} sx={noMarginStyle}>
                         <p style={{ margin: '0' }}>{children}</p>
                     </Grid>
                     <Grid sm={0.5}></Grid>
-                    <Grid xs={12} sm={5.5} sx={noMarginStyle}>
+                    <Grid xs={12} sm={7.5} sx={noMarginStyle}>
                         <PictureBlock path={imgPath} subtitle={subtitle}/>
                     </Grid>
                 </Grid>
@@ -26,11 +26,11 @@ const PictureCombo = ({children, imgPath, subtitle = undefined, side = 'right'})
             return (
                 <Grid container spacing={3} xs={12} 
                     sx={{ margin: '0.75em 0', padding: '0', textAlign: 'justify' }}>
-                    <Grid xs={12} sm={5.5} sx={noMarginStyle}>
+                    <Grid xs={12} sm={7.5} sx={noMarginStyle}>
                         <PictureBlock path={imgPath} subtitle={subtitle}/>
                     </Grid>
                     <Grid sm={0.5}></Grid>
-                    <Grid xs={12} sm={6} sx={noMarginStyle}>
+                    <Grid xs={12} sm={4} sx={noMarginStyle}>
                     <p style={{ margin: '0'}}>{children}</p>
                     </Grid>
                 </Grid>
@@ -39,4 +39,4 @@ const PictureCombo = ({children, imgPath, subtitle = undefined, side = 'right'})
     
 }
 
-export default PictureCombo
+export default PictureCombo;

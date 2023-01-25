@@ -68,7 +68,7 @@ const MP3Sorter = () => {
             </TextBlock>
             
             <SubtitleBlock>Update:</SubtitleBlock>
-            <TextBlock>I worked on this more over Christmas 2021. You can see the updated post <a href={''}>at this link.</a></TextBlock>
+            <TextBlock>I worked on this more over Christmas 2021. You can see the updated post <a href={'/blog/posts/2022/mp3Sorter2'}>at this link.</a></TextBlock>
         </Grid>
     );
 }
