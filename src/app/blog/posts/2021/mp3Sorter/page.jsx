@@ -36,7 +36,7 @@ const MP3Sorter = () => {
                 <li>
                     <b>A decent GUI</b>
                     <ul>
-                        <li>I'm thinking of using 'tkinter' for this.</li>
+                        <li>I&apos;m thinking of using &apos;tkinter&apos; for this.</li>
                     </ul>
                 </li>
                 <li>
@@ -54,7 +54,7 @@ const MP3Sorter = () => {
                 <li>
                     <b>Interjections</b>
                     <ul>
-                        <li>If there’s no metadata, let’s allow the user to add some.</li>
+                        <li>If there&apos;s no metadata, let&apos;s allow the user to add some.</li>
                     </ul>
                 </li>
                 <li>

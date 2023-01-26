@@ -59,7 +59,7 @@ const About = () => {
             </Grid>
             <Grid xs={12}>
                 <p>And when he’s not doing these things, you might also find him writing, riding his motorcycle, gaming or working on his other skills. </p>
-                <h2>What's next?</h2>
+                <h2>What&apos;s next?</h2>
                 <p>When he finishes his courses at Camosun in 2023, Dylan hopes to find work in the fields of DevOps or Software Development. He has a drive to solve problems with no clear solutions, and he thrives in settings where the creativity and optimization of those solutions are encouraged. </p>
             </Grid>
         </Grid>
