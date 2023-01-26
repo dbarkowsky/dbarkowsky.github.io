@@ -29,6 +29,24 @@ const posts = [
             code: 'https://github.com/dbarkowsky/mp3_Sorter.git',
         }
     },
+    {
+        title: '$2 Billion Dollar Bill',
+        date: new Date('2021-10-01'),
+        blurb: 'A fun project in imaginary money and Inkscape.',
+        paths: {
+            img: '/posts/2021/twoBillionDollarBill/dollar_back.jpg',
+            post: '/blog/posts/2021/twoBillionDollarBill',
+        }
+    },
+    {
+        title: 'Raspberry Pi Projects',
+        date: new Date('2021-11-01'),
+        blurb: 'Talking about my start with the Raspberry Pi.',
+        paths: {
+            img: '/posts/2021/piProjects/temperature.jpg',
+            post: '/blog/posts/2021/piProjects',
+        }
+    },
     
 ]
 

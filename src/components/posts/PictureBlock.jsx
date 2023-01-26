@@ -2,7 +2,7 @@ import Grid from "@mui/material/Unstable_Grid2/Grid2";
 import colours from "../Colours";
 
 const PictureBlock = ({path, subtitle}) => {
-    const noPaddingStyle = { padding: '0' };
+    const noPaddingStyle = { padding: '0', marginBottom: '1em' };
     const subtitleStyle = {
         position: 'relative',
         bottom: '32px',
