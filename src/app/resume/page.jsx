@@ -6,6 +6,7 @@ import EducationBlock from '@/components/resume/EducationBlock';
 import JobBlock from '@/components/resume/JobBlock';
 import jobs from '@/data/jobs';
 import education from '@/data/education';
+import awards from '@/data/awards';
 import { soft, software, technical } from '@/data/skills';
 import SkillBlock from '@/components/resume/SkillBlock';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -125,6 +126,23 @@ const Resume = () => {
                             startDate={job.startDate}
                             endDate={job.endDate}
                             points={job.points}
+                        />
+                    ))
+                }
+            </Grid>
+            <Grid xs={12} sx={verticalSectionStyle}>
+                <h2 style={headingMarginKiller}>Awards</h2>
+                {
+                    awards
+                    .sort((a, b) => { 
+                        return b.date - a.date;
+                    }).map(item => (
+                        <EducationBlock
+                            key={item.certificate}
+                            certificate={item.award}
+                            issuer={item.issuer}
+                            date={item.date}
+                            blurb={item.blurb}
                         />
                     ))
                 }
