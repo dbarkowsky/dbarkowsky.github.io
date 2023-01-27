@@ -8,6 +8,6 @@ export default function App({ Component, pageProps }) {
   disableGutters
 >
   <NavBar/>
-  <Component props={pageProps}/>
+  <Component/>
 </Container>
 }

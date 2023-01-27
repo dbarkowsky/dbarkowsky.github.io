@@ -10,7 +10,7 @@ import posts from '@/data/posts';
 import SubtitleBlock from '@/components/posts/SubtitleBlock';
 import PictureCombo from '@/components/posts/PictureCombo';
 
-const MP3Sorter2 = () => {
+const Bill = () => {
     const currentPost = posts.find(post => post.title == "$2 Billion Dollar Bill");
     return (
         <Grid container spacing={2} padding="1em" sx={{
@@ -47,4 +47,4 @@ const MP3Sorter2 = () => {
     );
 }
 
-export default MP3Sorter2;
+export default Bill;
