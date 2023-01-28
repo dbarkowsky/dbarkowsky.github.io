@@ -12,6 +12,7 @@ import PictureCombo from '@/components/posts/PictureCombo';
 import VideoBlock from '@/components/posts/VideoBlock';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import Link from 'next/link';
 
 const SushiBot2 = () => {
     const currentPost = posts.find(post => post.title == "SushiBot - Part 2");
@@ -25,7 +26,7 @@ const SushiBot2 = () => {
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
 
             <TextBlock>Well, I’ve been holding on to this post for almost two months now, hoping that I might get a chance to get some “in action” shots, but the next dinner opportunity is far away, so let’s take a look at the SushiBot now.</TextBlock>
-            <TextBlock>You might remember from <a href='/blog/posts/2022/sushiBot1'>my last post on the SushiBot</a> that we had previously assembled all the parts (a Raspberry Pi, a chassis, motors and motor controller) into a functioning robot that could drive on command. At that point, it basically had a small set of instructions that included turning, going forward, or going backwards. My wife had named it Nigiri.</TextBlock>
+            <TextBlock>You might remember from <Link href='/blog/posts/2022/sushiBot1'>my last post on the SushiBot</Link> that we had previously assembled all the parts (a Raspberry Pi, a chassis, motors and motor controller) into a functioning robot that could drive on command. At that point, it basically had a small set of instructions that included turning, going forward, or going backwards. My wife had named it Nigiri.</TextBlock>
             <TextBlock>I mentioned at the end of that post that there was a bit of a setback. The Raspberry Pi was chilling under our bed, a seemingly safe place where I could keep it powered on and simply SSH in to do some light tinkering on the SushiBot code. One day, however, I received no response. Upon investigation, there was no green LED, indicating that nothing was being read/written to the microSD card. Many Google searches later, I came to the conclusion that somehow the 3v3 power rail had shorted out. It was odd, seeing as we hadn’t touched it, but there really was no immediate fix. I found another used Raspberry Pi 3B+ online, and we began to wait a month for its arrival. </TextBlock>
             <TextBlock>In the mean time, I also ordered a new power distribution chip for the dead Pi. They are incredibly cheap, and there’s a location in China that ships them already pre-programmed to match the chip on the Pi that had seemingly shorted out. This eventually did arrive (after the new Pi), but I think I overestimated my soldering skills here. Maybe with a proper flow-soldering setup, I might have been able to pull it off, but trying to use a heat gun to flow solder the chip was not easy, and the plethora of tiny resistors that surrounded it made the job seemingly impossible by my hands. It was a fun experiment, but I ended up calling it quits on that board.</TextBlock>
 
