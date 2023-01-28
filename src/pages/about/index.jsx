@@ -20,19 +20,19 @@ const About = () => {
                 <HighlightBox 
                     title={'Taiwan'} 
                     text={`He jumped into the education field, living and teaching in Qidu, Taiwan. It was a great adventure, and there were ample opportunities to explore the beautiful country. He misses the amazing food most of all.`} 
-                    imgSrc={'/about/grzkaq72.bmp'}/>
+                    imgSrc={'/about/grzkaq72.jpg'}/>
             </Grid>
             <Grid xs={12} md={4}>
                 <HighlightBox 
                     title={'Edmonton'} 
                     text={`Returning to Canada, he ended up tutoring adults who had been injured in workplace accidents. He covered subjects such as ESL, computers, and GED preparation.`} 
-                    imgSrc={'/about/3q1ngsu0.bmp'}/>
+                    imgSrc={'/about/3q1ngsu0.jpg'}/>
             </Grid>
             <Grid xs={12} md={4}>
                 <HighlightBox 
                     title={'Victoria'} 
                     text={`Once back in Victoria, he worked with the City of Victoria in several different positions, learning more about budgets, project workflows, and dipping his toes in SharePoint and Power Automate. `} 
-                    imgSrc={'/about/kdosa2ml.bmp'}/>
+                    imgSrc={'/about/kdosa2ml.jpg'}/>
             </Grid>
             <Grid xs={12}>
                 <p>Now he is continuing his education at Camosun College. He is currently enrolled in an Information and Computer Systems program. Find more info about his past on his resume. </p>
