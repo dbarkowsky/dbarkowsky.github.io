@@ -5,7 +5,8 @@ const PictureCombo = ({children, imgPath, subtitle = undefined, side = 'right'})
     const noMarginStyle = {
         margin: '0',
         padding: '0',
-        paddingRight: '0.25em'
+        paddingRight: '0.25em',
+        minHeight: '1em'
     };
     switch (side) {
         case 'right':
