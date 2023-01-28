@@ -138,7 +138,7 @@ const Resume = () => {
                         return b.date - a.date;
                     }).map(item => (
                         <EducationBlock
-                            key={item.certificate}
+                            key={item.award}
                             certificate={item.award}
                             issuer={item.issuer}
                             date={item.date}
