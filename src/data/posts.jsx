@@ -57,6 +57,16 @@ const posts = [
             code: 'https://github.com/dbarkowsky/SushiBot'
         }
     },
+    {
+        title: 'SushiBot - Part 2',
+        date: new Date('2022-04-23'),
+        blurb: 'The completion of Nigiri, the sushi delivery bot.',
+        paths: {
+            img: '/posts/2022/sushiBot2/newroof.jpg',
+            post: '/blog/posts/2022/sushiBot2',
+            code: 'https://github.com/dbarkowsky/SushiBot'
+        }
+    },
     
 ]
 

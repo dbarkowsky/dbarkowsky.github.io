@@ -14,7 +14,7 @@ const PictureBlock = ({path, subtitle}) => {
     }
     return (
         <Grid container spacing={1} xs={12} sx={noPaddingStyle}>
-            <img src={path} style={{
+            <img src={path} loading='lazy' style={{
                 width: '100%',
                 borderRadius: '10px'
             }}/>
