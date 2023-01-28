@@ -47,6 +47,16 @@ const posts = [
             post: '/blog/posts/2021/piProjects',
         }
     },
+    {
+        title: 'SushiBot - Part 1',
+        date: new Date('2022-02-08'),
+        blurb: 'The first gains in making an line-following robot.',
+        paths: {
+            img: '/posts/2022/sushiBot1/loosewires.jpg',
+            post: '/blog/posts/2022/sushiBot1',
+            code: 'https://github.com/dbarkowsky/SushiBot'
+        }
+    },
     
 ]
 
