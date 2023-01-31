@@ -25,9 +25,9 @@ const PostBlock = ({title, date, blurb, paths}) => {
                 alt="green iguana"
                 height="140"
                 image={paths.img}
-            />
+            /> 
             <CardContent>
-                <h3 style={{ margin: '0'}}>{title}</h3>
+                <h4 style={{ margin: '0'}}>{title}</h4>
                 <h5 style={{ marginTop: '0'}}>{date.toLocaleDateString()}</h5>
                 <p style={{ fontSize: '12pt' }}>{blurb}</p>
             </CardContent>

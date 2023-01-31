@@ -67,7 +67,17 @@ const posts = [
             code: 'https://github.com/dbarkowsky/SushiBot'
         }
     },
-    
+    {
+        title: 'Mock Storefront Webpage',
+        date: new Date('2022-04-26'),
+        blurb: 'A showcase of my final project for ICS-128.',
+        paths: {
+            img: '/posts/2022/ics128final/cart.png',
+            post: '/blog/posts/2022/ics128final',
+            demo: 'https://dbarkowsky.github.io/ICS128_Final_Project/',
+            code: 'https://github.com/dbarkowsky/ICS128_Final_Project'
+        }
+    },
 ]
 
 export default posts;
