@@ -78,6 +78,15 @@ const posts = [
             code: 'https://github.com/dbarkowsky/ICS128_Final_Project'
         }
     },
+    {
+        title: 'Co-op Experience',
+        date: new Date('2022-08-24'),
+        blurb: 'Talking about my time working at the Provincial Government.',
+        paths: {
+            img: '/posts/2022/coop/cart.png',
+            post: '/blog/posts/2022/coop',
+        }
+    },
 ]
 
 export default posts;
