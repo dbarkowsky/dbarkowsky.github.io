@@ -87,6 +87,17 @@ const posts = [
             post: '/blog/posts/2022/coop',
         }
     },
+    {
+        title: 'Bomb Assistant',
+        date: new Date('2022-12-28'),
+        blurb: 'A companion app for a bomb defusal game.',
+        paths: {
+            img: '/posts/2022/bombAssistant/thumb.jpg',
+            post: '/blog/posts/2022/bombAssistant',
+            code: 'https://github.com/dbarkowsky/BombAssistant',
+            demo: 'https://dbarkowsky.github.io/BombAssistant/'
+        }
+    },
 ]
 
 export default posts;
