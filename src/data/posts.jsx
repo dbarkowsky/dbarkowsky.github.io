@@ -83,7 +83,7 @@ const posts = [
         date: new Date('2022-08-24'),
         blurb: 'Talking about my time working at the Provincial Government.',
         paths: {
-            img: '/posts/2022/coop/cart.png',
+            img: '/posts/2022/coop/thumb.jpg',
             post: '/blog/posts/2022/coop',
         }
     },
