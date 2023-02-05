@@ -21,7 +21,7 @@ const MP3Sorter = () => {
 
             <SubtitleBlock>The Dilemma</SubtitleBlock>
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
-            <TextBlock>Perhaps you’ve found yourself in a similar position: your media library is constantly growing, but somehow the result has been a heap of loose files in your music folder — no artist or album folders at all.</TextBlock>
+            <TextBlock>Perhaps you&apos;ve found yourself in a similar position: your media library is constantly growing, but somehow the result has been a heap of loose files in your music folder — no artist or album folders at all.</TextBlock>
             <PictureBlock path={'/posts/2021/mp3Sorter/before.PNG'} subtitle={'Before'}/>
             <TextBlock>I recently had this dilemma, and the thought of manually creating folders and sorting them all into their proper locations seemed like a painful task.</TextBlock>
             <TextBlock>Instead, I opted to take what I had recently been learning in Python to create a less intensive — and more fun — solution to this problem.</TextBlock>
@@ -29,7 +29,7 @@ const MP3Sorter = () => {
 
             <SubtitleBlock>What does it do?</SubtitleBlock>
             <TextBlock>At its core, the script checks each file for an artist, creates a matching folder, then plops that files where it belongs. The real key to accessing the artist information was with the eye3D package. With this, it was easy to grab metadata from music files and put it to use.</TextBlock>
-            <TextBlock>For my immediate use, this worked like a charm, and I was satisfied—at first. Now I have a to-do list of features that I’m hoping to add.</TextBlock>
+            <TextBlock>For my immediate use, this worked like a charm, and I was satisfied—at first. Now I have a to-do list of features that I&apos;m hoping to add.</TextBlock>
 
             <SubtitleBlock>To-Do</SubtitleBlock>
             <ul>

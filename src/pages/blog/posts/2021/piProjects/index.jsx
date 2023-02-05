@@ -42,14 +42,14 @@ const MP3Sorter2 = () => {
                     <li>Falling temperature = green light</li>
                     <li>Stable temperature = yellow light</li>
                 </ul>
-                <TextBlock>This meant that I had to store the temperature in another file each refresh and pull that number back to check against the current temperature. This part actually wasn’t too bad.</TextBlock>
+                <TextBlock>This meant that I had to store the temperature in another file each refresh and pull that number back to check against the current temperature. This part actually wasn&apos;t too bad.</TextBlock>
             </PictureCombo>
             <TextBlock>The hardest part came from the web server implementation. I used the mod_wsgi express module to run the main Python file, and after opening a few necessary ports, it was seemingly good to go.</TextBlock>
-            <TextBlock>One last challenge: I was unaware the webpage was expecting an array of UTF-8 Strings. It took a lot of experimenting, researching, and reviewing the server logs, but eventually I got it to work. There’s nothing like the feeling of success after a tough challenge.</TextBlock>
+            <TextBlock>One last challenge: I was unaware the webpage was expecting an array of UTF-8 Strings. It took a lot of experimenting, researching, and reviewing the server logs, but eventually I got it to work. There&apos;s nothing like the feeling of success after a tough challenge.</TextBlock>
 
             <SubtitleBlock>Next Ideas</SubtitleBlock>
-            <TextBlock>Every New Year’s, my wife and I carry on my wife’s family tradition of putting on a Japanese dinner. It’s a lot of work, but after so many years, we make a mean gyoza. She’s often thought there was more we could do for delivery of the food, and then we discovered <a href='https://projects.raspberrypi.org/en/projects/rpi-python-line-following'>this link to a line following robot</a>.</TextBlock>
-            <TextBlock>It’s a hurdle, and I don’t know if it’s an achievable goal this season (especially considering holiday shipping times), but can you imagine this robot towing a small train of sushi? Sounds like a good time.</TextBlock>
+            <TextBlock>Every New Year&apos;s, my wife and I carry on my wife&apos;s family tradition of putting on a Japanese dinner. It&apos;s a lot of work, but after so many years, we make a mean gyoza. She&apos;s often thought there was more we could do for delivery of the food, and then we discovered <a href='https://projects.raspberrypi.org/en/projects/rpi-python-line-following'>this link to a line following robot</a>.</TextBlock>
+            <TextBlock>It&apos;s a hurdle, and I don&apos;t know if it&apos;s an achievable goal this season (especially considering holiday shipping times), but can you imagine this robot towing a small train of sushi? Sounds like a good time.</TextBlock>
         </Grid>
     );
 }

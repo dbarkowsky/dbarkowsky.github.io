@@ -14,7 +14,7 @@ const About = () => {
             <Grid xs={12}>
                 <h2>Where is he now?</h2>
                 <p>Dylan currently lives in (sometimes) sunny Esquimalt, BC along with his wife and two cats.</p>
-                <p>Since finishing his Bachelor’s Degree in 2013, he has continued to gather a growing number of certifications under his belt and has found himself working in several locations. </p>
+                <p>Since finishing his Bachelor&apos;s Degree in 2013, he has continued to gather a growing number of certifications under his belt and has found himself working in several locations. </p>
             </Grid>
             <Grid xs={12} md={4}>
                 <HighlightBox 
@@ -37,7 +37,7 @@ const About = () => {
             <Grid xs={12}>
                 <p>Now he is continuing his education at Camosun College. He is currently enrolled in an Information and Computer Systems program. Find more info about his past on his resume. </p>
                 <h2>Hobbies</h2>
-                <p>In his space time, Dylan keeps a to-do list of project ideas, some of which you can view on his projects page. When he’s not coding, he enjoys a number of other hobbies. </p>
+                <p>In his space time, Dylan keeps a to-do list of project ideas, some of which you can view on his projects page. When he&apos;s not coding, he enjoys a number of other hobbies. </p>
             </Grid>
             <Grid xs={12} md={4}>
                 <HighlightBoxVideo
@@ -58,7 +58,7 @@ const About = () => {
                     videoSrc={'/about/archery.mp4'}/>
             </Grid>
             <Grid xs={12}>
-                <p>And when he’s not doing these things, you might also find him writing, riding his motorcycle, gaming or working on his other skills. </p>
+                <p>And when he&apos;s not doing these things, you might also find him writing, riding his motorcycle, gaming or working on his other skills. </p>
                 <h2>What&apos;s next?</h2>
                 <p>When he finishes his courses at Camosun in 2023, Dylan hopes to find work in the fields of DevOps or Software Development. He has a drive to solve problems with no clear solutions, and he thrives in settings where the creativity and optimization of those solutions are encouraged. </p>
             </Grid>
