@@ -98,6 +98,16 @@ const posts = [
             demo: 'https://dbarkowsky.github.io/BombAssistant/'
         }
     },
+    {
+        title: 'Advent of Code 2022',
+        date: new Date('2023-01-03'),
+        blurb: 'A series of programming puzzles.',
+        paths: {
+            img: '/posts/2023/adventOfCode/thumb.jpg',
+            post: '/blog/posts/2023/adventOfCode',
+            code: 'https://github.com/dbarkowsky/AdventOfCode2022',
+        }
+    },
 ]
 
 export default posts;
