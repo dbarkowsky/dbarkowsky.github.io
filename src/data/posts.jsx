@@ -108,6 +108,16 @@ const posts = [
             code: 'https://github.com/dbarkowsky/AdventOfCode2022',
         }
     },
+    {
+        title: 'My New Portfolio',
+        date: new Date('2023-01-28'),
+        blurb: 'Updating the portfolio you\'re on now.',
+        paths: {
+            img: '/landing/2021-09-18.3.jpg',
+            post: '/blog/posts/2023/portfolio',
+            code: 'https://github.com/dbarkowsky/dbarkowsky.github.io',
+        }
+    },
 ]
 
 export default posts;
