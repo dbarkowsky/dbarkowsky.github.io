@@ -11,12 +11,6 @@ const awards = [
         date: '2012',
         blurb: 'Awarded to academically outstanding students enrolled or continuing in Italian or Spanish courses.',
     },
-    {
-        award: 'Yvonne Thompson-Page Co-op Student of the Year Award',
-        issuer: 'Camosun College',
-        date: '2023',
-        blurb: 'Awarded for excellence demonstrated in a co-op placement.',
-    },
 ]
 
 export default awards;
