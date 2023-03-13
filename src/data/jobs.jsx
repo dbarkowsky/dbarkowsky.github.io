@@ -93,7 +93,20 @@ const jobs = [
         points: [
             "Implemented testing framework to develop frontend and backend tests",
             "Created GitHub Actions workflows to automate testing, security scanning, and record results",
-            "Containerized application to provide production-ready images as well as specialized images for portable developer environment"
+            "Containerized application to provide production-ready images as well as specialized images for portable developer environment",
+            "Developed web applications using React and Node.js",
+            "Worked with teams in an Agile environment"
+        ]
+    },
+    {
+        title: 'Full Stack Developer',
+        employer: `Ministry of Citizens' Services`,
+        location: 'Saanich, BC',
+        startDate: new Date(2023, MAR),
+        points: [
+            "Developed frontend and backend solutions as scalable cloud-native applications",
+            "Implemented repeatable automated processes for building, testing, documenting, and deploying",
+            "Coordinated with team members to determine user requirements, project feasibility, and development strategy"
         ]
     },
 ]
