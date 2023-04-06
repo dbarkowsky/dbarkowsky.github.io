@@ -18,7 +18,7 @@ const AdventOfCode = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
 
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
 
@@ -28,7 +28,7 @@ const AdventOfCode = () => {
             </PictureCombo>
             <TextBlock>This was my first year doing this, and I&apos;m glad I did. I chose to use JavaScript because I wasn&apos;t sure how tough the challenges were going to be and it&apos;s my most proficient language. I also wanted to have access to Node packages if needed, although that didn&apos;t really come up. </TextBlock>
             <TextBlock>At first they started as easy challenges that could be completed each night in no more than an hour or two. By day 11, I finally hit my first roadblock with part 2. The challenge involved a group of monkeys passing your stuff around, which was fine to calculate the outcome of when there were only a few rounds, but part 2 asked for something which would cause most integers to overflow. This is where I wish my math skills were a little stronger, but it has been a long time since grade school. Eventually I had to look and see how other people online were addressing this. I&apos;m not sure I would have ever gotten the solution without this research, but I&apos;m not too distressed. I would have liked to have done this on my own, but looking at some of the genius solutions others had to each day&apos;s challenge was a learning experience that I didn&apos;t consider at first. </TextBlock>
-            
+
 
             <SubtitleBlock>Algorithms</SubtitleBlock>
             <TextBlock>I&apos;ve taken courses centred on algorithms in school before, but it seems like they were more concerned with data structures. Many of these challenges required algorithms like depth-first, breadth-first, Dijkstra&apos;s, and others that were mostly new to me. The concepts weren&apos;t crazy, but I didn&apos;t have much practice implementing them in real problems. </TextBlock>
@@ -41,7 +41,7 @@ const AdventOfCode = () => {
             <TextBlock>Please feel free to check out the GitHub repository. I&apos;ve included my inputs so you can try them out as well. I also made an effort to break each day into its own class with detailed comments, so if you&apos;re having difficulty, I hope you can use these to get you through the puzzles as well. I will definitely be giving this a go next year, perhaps in a different language. </TextBlock>
 
             <TextBlock>As a result of solving every challenge, this is my final image:</TextBlock>
-            <PictureBlock path={'/posts/2023/adventOfCode/finished.png'}/>
+            <PictureBlock path={'/posts/2023/adventOfCode/finished.png'} />
         </Grid>
     );
 }

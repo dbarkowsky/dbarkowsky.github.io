@@ -18,7 +18,7 @@ const Coop = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
 
             <TextBlock>That&apos;s it! Summer is almost over. I was fortunate enough to spend the majority of it in a co-op position with the Ministry of Citizens&apos; Services. </TextBlock>
             <TextBlock>The title I had was Full Stack Project Analyst. When I told that to my friends, they asked, “What does that even mean?” To be honest, I had no idea before I started. It wasn&apos;t until the first day that I had some inkling of what I would be doing. Now that it&apos;s over, I have no complaints.</TextBlock>

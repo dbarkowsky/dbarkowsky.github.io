@@ -17,7 +17,7 @@ const CardPrinter = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
 
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
 
@@ -28,16 +28,16 @@ const CardPrinter = () => {
 
             <SubtitleBlock>The Process</SubtitleBlock>
             <TextBlock>I started writing a program that I had envisioned with three parts: </TextBlock>
-                <ol>
-                    <li>a user interface that even the staff could use</li>
-                    <li>a way to comb the guest information from the management system we used</li>
-                    <li>a way to interact with the printer</li>
-                </ol>
+            <ol>
+                <li>a user interface that even the staff could use</li>
+                <li>a way to comb the guest information from the management system we used</li>
+                <li>a way to interact with the printer</li>
+            </ol>
             <TextBlock>Making a GUI was new to me. I had toyed with it before, but usually I worked off of a previously made solution and made it my own. It didn&apos;t look fantastic in the end, but it wasn&apos;t horrible, and it was reasonably clear. I slapped the company logo in there, and included two other options: a way for staff to print blanks (just Wi-Fi info) throughout the day was new walk-in guests came in and a way to print a single name.</TextBlock>
             <TextBlock>The printer interaction wasn&apos;t as bad as I expected. I had some familiarity with printing formats already, and it was simple enough to create an array of guest information, combine that with the generic Wi-Fi info, and send that to the printer as a PDF. The hardest part was finding the correct positioning for the text so it would land properly on the tiny card envelopes.</TextBlock>
             <TextBlock>Getting the guest information was the impossible hurdle, at least through Java. None of the data was in plain-text. The only way of getting that was using the management system to export a text file, which —although not beautifully formatted for reading— was at least somewhat parse-able. In the end, I settled on leaving the two or three clicks needed to generate this file to the end user, with instructions on how to do so in the GUI.</TextBlock>
             <TextBlock>The result was something I was pretty happy with. I was able to pack it as a .jar file, and the computers already had a JRE, so I didn&apos;t have to convince anyone to install this for me (none of our staff had admin privileges for certain). It wasn&apos;t the prettiest solution, but it looked way better than the handwritten envelopes. This was the first real Java coding that I had done since finishing the elective courses at UVIC, and it felt like a real achievement at the time.</TextBlock>
-            <PictureBlock path={'/posts/2021/cardPrinter/card-printer.PNG'} subtitle={'The single-page layout.'}/>
+            <PictureBlock path={'/posts/2021/cardPrinter/card-printer.PNG'} subtitle={'The single-page layout.'} />
 
             <SubtitleBlock>The Constraints</SubtitleBlock>
             <TextBlock>Of course, not everything is perfect.</TextBlock>

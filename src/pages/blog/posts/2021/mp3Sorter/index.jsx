@@ -17,15 +17,15 @@ const MP3Sorter = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
 
             <SubtitleBlock>The Dilemma</SubtitleBlock>
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
             <TextBlock>Perhaps you&apos;ve found yourself in a similar position: your media library is constantly growing, but somehow the result has been a heap of loose files in your music folder — no artist or album folders at all.</TextBlock>
-            <PictureBlock path={'/posts/2021/mp3Sorter/before.PNG'} subtitle={'Before'}/>
+            <PictureBlock path={'/posts/2021/mp3Sorter/before.PNG'} subtitle={'Before'} />
             <TextBlock>I recently had this dilemma, and the thought of manually creating folders and sorting them all into their proper locations seemed like a painful task.</TextBlock>
             <TextBlock>Instead, I opted to take what I had recently been learning in Python to create a less intensive — and more fun — solution to this problem.</TextBlock>
-            <PictureBlock path={'/posts/2021/mp3Sorter/after.PNG'} subtitle={'After'}/>
+            <PictureBlock path={'/posts/2021/mp3Sorter/after.PNG'} subtitle={'After'} />
 
             <SubtitleBlock>What does it do?</SubtitleBlock>
             <TextBlock>At its core, the script checks each file for an artist, creates a matching folder, then plops that files where it belongs. The real key to accessing the artist information was with the eye3D package. With this, it was easy to grab metadata from music files and put it to use.</TextBlock>
@@ -64,7 +64,7 @@ const MP3Sorter = () => {
                     </ul>
                 </li>
             </ul>
-            
+
             <SubtitleBlock>Update:</SubtitleBlock>
             <TextBlock>I worked on this more over Christmas 2021. You can see the updated post <a href={'/blog/posts/2022/mp3Sorter2'}>at this link.</a></TextBlock>
         </Grid>

@@ -18,7 +18,7 @@ const MP3Sorter2 = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
 
             <TextBlock>This year, I took a course at Camosun called OS and Architecture (ICS-113). The course focused on a lot of interesting concepts including memory management, error correction, and virtual machines, but the most satisfaction came from our work with Python and the Raspberry Pi.</TextBlock>
             <SubtitleBlock>Button Counter</SubtitleBlock>
@@ -30,7 +30,7 @@ const MP3Sorter2 = () => {
                 <li>Power of 2 = yellow light</li>
             </ul>
             <TextBlock>This was a rewarding start and good experience for the next project.</TextBlock>
-            <VideoBlock path={"https://www.youtube.com/embed/4HOLjqZTVoc"}/>            
+            <VideoBlock path={"https://www.youtube.com/embed/4HOLjqZTVoc"} />
 
             <SubtitleBlock>Temperature Sensor & Web Server</SubtitleBlock>
             <TextBlock>Soon after, we had another Pi task. This time it involved incorporating another piece of the Pi-Hat: the temperature sensor. Better yet, we had to be able to reach the output via the browser on another computer.</TextBlock>

@@ -22,7 +22,7 @@ const SushiBot2 = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
 
             <TextBlock>Well, I&apos;ve been holding on to this post for almost two months now, hoping that I might get a chance to get some “in action” shots, but the next dinner opportunity is far away, so let&apos;s take a look at the SushiBot now.</TextBlock>
@@ -60,10 +60,10 @@ const SushiBot2 = () => {
                     />
                 </ImageListItem>
             </ImageList>
-            
+
             <TextBlock>To continue development while I was Pi-less, I used the desktop version of Raspberry Pi OS. The big loss here was that I had no feedback to know if the motor controller commands were truly working. I couldn&apos;t even use the adafruit library without the motor controller attached, so I had to make a mockMotor.py file to simulate the controller&apos;s methods. I also found a <a href='https://github.com/nosix/raspberry-gpio-emulator'>great GPIO simulator</a> which worked for testing the IR sensor inputs.</TextBlock>
             <PictureCombo side='left' imgPath={'/posts/2022/sushiBot2/ribbonandbread.jpg'}>
-                Back to the SushiBot, I was now paranoid that we might accidentally short out this new Pi. They aren&apos;t cheap these days. I soldered a header with longer GPIO pins onto the motor controller, replacing the original header. That was also some unknown territory in soldering, but I was glad that past me had decided to only solder on the pins I thought we would use. With these longer pins, I could attach a ribbon cable and breadboard. Now all the GPIO pins were safe, provided I didn&apos;t connect anything that shouldn&apos;t be connected through the breadboard. 
+                Back to the SushiBot, I was now paranoid that we might accidentally short out this new Pi. They aren&apos;t cheap these days. I soldered a header with longer GPIO pins onto the motor controller, replacing the original header. That was also some unknown territory in soldering, but I was glad that past me had decided to only solder on the pins I thought we would use. With these longer pins, I could attach a ribbon cable and breadboard. Now all the GPIO pins were safe, provided I didn&apos;t connect anything that shouldn&apos;t be connected through the breadboard.
             </PictureCombo>
             <PictureCombo side='left' imgPath={'/posts/2022/sushiBot2/newroof.jpg'}>
                 While I tested code to ensure that they system would recognize the IR sensors we planned to use for line detection, my wife made some modifications to the chassis that would allow an extra layer of components. With the added breadboard, this helps to cram everything on in a more organized fashion. She&apos;s also better at tidying up the wires than I am.
@@ -74,7 +74,7 @@ const SushiBot2 = () => {
             </PictureCombo>
             <TextBlock>The solution to this was to step the sophistication back a bit and revert to tank controls. Want to turn left? Right wheels go forward, left wheels go backwards. It worked exceedingly well, but I wasn&apos;t super happy with how it looked, especially when pulling the trailers. I spent a lot of time fiddling with the parameters to get it running with as little jerkiness to the trailers as possible. It&apos;s better than when we started, but I&apos;m considering this a stretch goal at this point. If we had a mechanism to actually turn the front wheels like a real vehicle, I think it would be possible, but not with this current setup. </TextBlock>
             <TextBlock>We set up a testing track in our room, and let her rip. Below you can see what was one of the final tests. Hockey stick tape ended up being a great line material due to its low reflectivity. The perpendicular lines are stop lines, with the idea being that people would have time to add or remove trays of sushi during dinner. It&apos;s incredible how much weight these little motors can pull. We put old textbooks on the trailers to see, and apart from going a bit slower, there wasn&apos;t a huge difference in performance. </TextBlock>
-            <VideoBlock path={'https://www.youtube.com/embed/HCVM7GCsBME'}/>
+            <VideoBlock path={'https://www.youtube.com/embed/HCVM7GCsBME'} />
             <TextBlock>Now we&apos;re just waiting for an actual dinner opportunity to test this out. My wife is thinking of having a make-up New Year&apos;s dinner sometime this summer, so I&apos;ll be sure to add a video of the SushiBot in action then. </TextBlock>
 
             <SubtitleBlock>Update! October 2022</SubtitleBlock>
@@ -84,7 +84,7 @@ const SushiBot2 = () => {
                 <li>The brand of tape is important. I usually use black hockey stick tape. It is matte, so usually works well. This brand had some sparkle to it, and that was enough to confuse the sensor. Had to find some alternative tape last minute.</li>
                 <li>The sensors are finicky. We had to build ramps to get over the little floor joints, otherwise it would think the sensors were too far from the ground.</li>
             </ul>
-            <VideoBlock path={'https://www.youtube.com/embed/XN2nzURho30'}/>
+            <VideoBlock path={'https://www.youtube.com/embed/XN2nzURho30'} />
             <TextBlock>I think if I keep tinkering on this project that the next step will be some sort of interface. Perhaps a server running on the Raspberry Pi that awaits commands and a web app front end that people could click on to drive the robot. We&apos;ll see!</TextBlock>
         </Grid>
     );

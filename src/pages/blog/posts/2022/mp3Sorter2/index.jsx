@@ -18,7 +18,7 @@ const MP3Sorter2 = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
 
             <TextBlock>As I mentioned <a href={'/blog/posts/2021/mp3Sorter'}>in my previous post</a>, I needed a way to sort my loose mp3 files into folders based on their artist tags. I had already added a lot of that metadata manually, but the idea of creating hundreds of folders to file these loose songs sounded arduous, so I automated the process with a Python script. Using the eyeD3 module to access the tags made it a lot simpler than I expected.</TextBlock>

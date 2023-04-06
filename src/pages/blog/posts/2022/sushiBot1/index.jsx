@@ -19,7 +19,7 @@ const SushiBot1 = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
 
             <SubtitleBlock>Preamble</SubtitleBlock>
@@ -50,9 +50,9 @@ const SushiBot1 = () => {
             <TextBlock>Somewhat to my surprise, the headers were not soldered onto the motor controller. I had never done any electronics soldering, although I did own a soldering kit. There was another issue: the header had very short pins, so there was no way to attach the sensors if I wanted to stack it directly on the Pi. I decided to just solder the pins it needed for now, with the plan to attach a long-pinned header later. With a tip that was definitely a little too big, I soldered everything together. </TextBlock>
             <PictureCombo side={'right'} imgPath={'/posts/2022/sushiBot1/loosewires.jpg'}>
                 My wife constructed the chassis and gave it a slick paint job. She also put together three little trailers that would carry sushi. While she did this, I started working on some Python code to drive the wheels. The provided Adafruit library was simple to use. You simply created an instance of the class they provided and then called the motors and set throttle speed. It advertises any speed between 1.0 and -1.0 (reverse), but we found anything less than 0.5 or -0.5 was not enough power to drive the wheels and only produced a squeal from the motors. I made a test file to see if we had hooked everything up correctly, and the results were promising.
-            </PictureCombo>     
+            </PictureCombo>
             <TextBlock>To practice some driving, I wrote a Manual class which outlined all the basic movements: forward, back, right, left, stop, and coast. Most of these required parameters for time and speed, but they allowed me to call them directly from the Python shell and test drive our robot. After that I strung some together in another script for further testing. The results were pretty good. In this video, I was using the stop() functions between each command, so it was a little jerky. I swapped those out for a coast() function that let the wheels move freely between commands, and it smoothed things out tremendously. </TextBlock>
-            <VideoBlock path={'https://www.youtube.com/embed/fzh3J-OT3Eg'}/>
+            <VideoBlock path={'https://www.youtube.com/embed/fzh3J-OT3Eg'} />
             <TextBlock>Unfortunately, this is where part 1 ends. There was a bit of a setback that I&apos;ll post about next time, hopefully with some good news as well. </TextBlock>
         </Grid>
     );

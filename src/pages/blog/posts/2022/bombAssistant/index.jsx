@@ -18,7 +18,7 @@ const BombAssistant = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
 
             <TextBlock>It&apos;s finally finished! At the beginning of the year, I told myself that I would finish two personal projects. One of those ended up being SushiBot, which you can read about in older posts. The second one was BombAssistant, a companion application to assist with the game Keep Talking and Nobody Explodes. </TextBlock>
             <TextBlock>As always, follow this link to see the <a href={currentPost.paths.code}>GitHub repository.</a></TextBlock>
@@ -42,7 +42,7 @@ const BombAssistant = () => {
 
             <SubtitleBlock>Conclusion</SubtitleBlock>
             <TextBlock>As of writing, I still haven&apos;t used this with the actual game in order to win. There are still two achievements that my wife and I are missing. Until we get those legitimately, I think this app will stay on the shelf, but I am looking forward to smashing high scores with it after.</TextBlock>
-            <PictureBlock path={'/posts/2022/bombAssistant/modules.png'} subtitle='All modules'/>
+            <PictureBlock path={'/posts/2022/bombAssistant/modules.png'} subtitle='All modules' />
         </Grid>
     );
 }

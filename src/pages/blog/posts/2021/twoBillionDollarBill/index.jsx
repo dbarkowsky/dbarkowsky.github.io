@@ -18,7 +18,7 @@ const Bill = () => {
             margin: 0,
         }}>
             <TitleBlock>{currentPost.title}</TitleBlock>
-            <DateBlock>{currentPost.date.toLocaleDateString()}</DateBlock>
+            <DateBlock>{currentPost.date.toLocaleDateString('fr-CA')}</DateBlock>
 
             <SubtitleBlock>Way back in 2013...</SubtitleBlock>
             <TextBlock>My wife and I started a habit long ago where we would bet on little things:</TextBlock>
@@ -40,9 +40,9 @@ const Bill = () => {
             <SubtitleBlock>Reflection</SubtitleBlock>
             <TextBlock>While Inkscape isn&apos;t always the most user-friendly program. It did the job here. The most frustration came from Inkscape&apos;s inability to process the insane number of paths that I had created. Every movement or addition resulted in substantial lag. I still jump to use it whenever I need to make posters or icons, however, as it&apos;s easy to keep on a flash drive when you need it in a pinch and the scalability of SVG files is unmatched.</TextBlock>
             <TextBlock>See my final result below:</TextBlock>
-            <PictureBlock path={'/posts/2021/twoBillionDollarBill/dollar_front.jpg'}/>
+            <PictureBlock path={'/posts/2021/twoBillionDollarBill/dollar_front.jpg'} />
             <TextBlock></TextBlock>
-            <PictureBlock path={'/posts/2021/twoBillionDollarBill/dollar_back.jpg'}/>
+            <PictureBlock path={'/posts/2021/twoBillionDollarBill/dollar_back.jpg'} />
         </Grid>
     );
 }
