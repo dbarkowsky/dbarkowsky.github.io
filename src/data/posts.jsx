@@ -118,6 +118,15 @@ const posts = [
             code: 'https://github.com/dbarkowsky/dbarkowsky.github.io',
         }
     },
+    {
+        title: 'Game & Mobile Dev',
+        date: new Date('2023-03-31'),
+        blurb: `Talking about things I've made this semester.`,
+        paths: {
+            img: '/posts/2023/gamingAndMobile/unityapple.png',
+            post: '/blog/posts/2023/gamingAndMobile',
+        }
+    },
 ]
 
 export default posts;
