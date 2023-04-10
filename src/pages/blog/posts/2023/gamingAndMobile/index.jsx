@@ -32,7 +32,7 @@ const Portfolio = () => {
 
             <PictureCombo imgPath={'/posts/2023/gamingAndMobile/platformer.png'}>
                 <SubtitleBlock>3D Platformer</SubtitleBlock>
-                <TextBlock>The obvious place to start, Pong is a pretty simple affair of learning how to move objects in game based on player input, apply movement to non-controlled objects, and have objects interact with each other. Surprisingly, this is not a 2D version, but it does have that illusion. Only the 3D ball gives it away. </TextBlock>
+                <TextBlock>Here I learned about character movement in a 3D space, including double-jumping, free camera movement, and coroutines. It was also a chance to experiment with different models using Unity&apos;s rigging and skinning system.</TextBlock>
             </PictureCombo>
 
             <PictureCombo imgPath={'/posts/2023/gamingAndMobile/fps.png'}>
