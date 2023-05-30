@@ -1,7 +1,7 @@
 import Grid from "@mui/material/Unstable_Grid2";
 import colours from "../Colours";
 
-const PictureBlock = ({path, subtitle}) => {
+const PictureBlock = ({ path, subtitle }) => {
     const noPaddingStyle = { padding: '0', marginBottom: '1em' };
     const subtitleStyle = {
         position: 'relative',
@@ -17,7 +17,7 @@ const PictureBlock = ({path, subtitle}) => {
             <img src={path} loading='lazy' style={{
                 width: '100%',
                 borderRadius: '10px'
-            }}/>
+            }} />
             {subtitle ? <div style={subtitleStyle}>{subtitle}</div> : <></>}
         </Grid>
     );
