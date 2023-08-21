@@ -2,12 +2,13 @@ import { Box } from '@mui/material';
 import colours from '../Colours';
 
 
-const HighlightBox = ({title, text, imgSrc}) => {
+const HighlightBox = ({ title, text, imgSrc }) => {
     return (
         <Box sx={{
             backgroundColor: colours.highlight,
             padding: '5px 1em',
-            borderRadius: '3px'
+            borderRadius: '3px',
+            color: colours.lightText
         }}>
             <h3>{title}</h3>
             <img src={imgSrc} style={{
