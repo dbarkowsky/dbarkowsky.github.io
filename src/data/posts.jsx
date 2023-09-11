@@ -130,12 +130,22 @@ const posts = [
     {
         title: 'Robo-Fish Attack',
         date: new Date('2023-05-04'),
-        blurb: `Final project for game devevelopment class.`,
+        blurb: `Final project for game development class.`,
         paths: {
             img: '/posts/2023/gamingFinal/catplane.png',
             post: '/blog/posts/2023/gamingFinal',
             code: 'https://github.com/dbarkowsky/ICS223-FinalProject',
             demo: 'https://drive.google.com/file/d/1hrv6Zlr88f04zjuafHxOPlf5Xo8LUlcA/view?usp=sharing'
+        }
+    },
+    {
+        title: 'Capstone Project',
+        date: new Date('2023-08-15'),
+        blurb: `My final school project for purchase reimbursements.`,
+        paths: {
+            img: '/posts/2023/capstone/symposium.jpg',
+            post: '/blog/posts/2023/capstone',
+            code: 'https://github.com/bcgov/citz-imb-staff-purchase-reimbursement',
         }
     },
 ]
