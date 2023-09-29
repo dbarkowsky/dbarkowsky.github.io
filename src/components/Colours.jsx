@@ -16,12 +16,21 @@ const forestPalette = {
     salmon: "#e09771",
 };
 
+const greyScale = {
+    whiteish: "#eeeeee",
+    lightGrey: "#aaaaaa",
+    darkGrey: "#555555",
+    blackish: "#222222",
+    accent: "#083601"
+}
+
 export default {
-    darkBackground: celeste.eggplant,
-    lightBackground: celeste.babyPowder,
-    lightText: celeste.babyPowder,
-    darkText: celeste.eggplant,
-    highlight: celeste.eggplant,
-    progressBarBackground: celeste.eggplant,
-    progressBarForeground: celeste.persianIndigo
+    darkBackground: greyScale.blackish,
+    lightBackground: greyScale.whiteish,
+    lightText: greyScale.whiteish,
+    darkText: greyScale.blackish,
+    highlight: greyScale.darkGrey,
+    progressBarBackground: greyScale.lightGrey,
+    progressBarForeground: greyScale.accent,
+    accent: greyScale.accent
 };

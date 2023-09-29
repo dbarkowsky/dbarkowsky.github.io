@@ -43,11 +43,13 @@ const Capstone = () => {
 
             <TextBlock>
                 The asks were pretty simple:
-                <ol>
-                    <li>Give staff a standard way to submit their requests.</li>
-                    <li>Allow admin staff a single portal to view and manage these requests.</li>
-                    <li>Notify the involved parties when steps were completed or needed their attention.</li>
-                </ol>
+            </TextBlock>
+            <ol>
+                <li>Give staff a standard way to submit their requests.</li>
+                <li>Allow admin staff a single portal to view and manage these requests.</li>
+                <li>Notify the involved parties when steps were completed or needed their attention.</li>
+            </ol>
+            <TextBlock>
                 Additionally, I was also asked to meet these criteria:
             </TextBlock>
 

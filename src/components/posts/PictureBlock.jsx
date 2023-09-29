@@ -16,7 +16,7 @@ const PictureBlock = ({ path, subtitle }) => {
         <Grid container spacing={1} xs={12} sx={noPaddingStyle}>
             <img src={path} loading='lazy' style={{
                 width: '100%',
-                borderRadius: '10px'
+                borderRadius: '10px',
             }} />
             {subtitle ? <div style={subtitleStyle}>{subtitle}</div> : <></>}
         </Grid>
