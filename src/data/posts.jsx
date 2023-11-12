@@ -50,7 +50,7 @@ const posts = [
     {
         title: 'SushiBot - Part 1',
         date: new Date('2022-02-08'),
-        blurb: 'The first gains in making an line-following robot.',
+        blurb: 'The first gains in making a line-following robot.',
         paths: {
             img: '/posts/2022/sushiBot1/loosewires.jpg',
             post: '/blog/posts/2022/sushiBot1',
@@ -146,6 +146,17 @@ const posts = [
             img: '/posts/2023/capstone/symposium.jpg',
             post: '/blog/posts/2023/capstone',
             code: 'https://github.com/bcgov/citz-imb-staff-purchase-reimbursement',
+        }
+    },
+    {
+        title: 'AITA Analysis',
+        date: new Date('2023-10-18'),
+        blurb: `Analyzing posts from r/AmITheAsshole`,
+        paths: {
+            img: '/posts/2023/aita/reddit.png',
+            post: '/blog/posts/2023/aita',
+            code: 'https://github.com/dbarkowsky/AITA-Analysis',
+            demo: 'https://dbarkowsky.github.io/AITA-Analysis'
         }
     },
 ]
