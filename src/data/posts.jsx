@@ -162,13 +162,24 @@ const posts = [
     {
         title: 'Takeaways from Work',
         date: new Date('2024-09-22'),
-        blurb: `My Biggest Project So Far`,
+        blurb: `My biggest project so far`,
         paths: {
             img: '/posts/2024/pims/logo.svg',
             post: '/blog/posts/2024/pims',
             code: 'https://github.com/bcgov/PIMS',
         }
-    }
+    },
+    {
+      title: 'Duck Checkers',
+      date: new Date('2024-11-17'),
+      blurb: `Like checkers but with ducks`,
+      paths: {
+          img: '/posts/2024/duckCheckers/duck.png',
+          post: '/blog/posts/2024/duckCheckers',
+          code: 'https://github.com/dbarkowsky/DuckCheckers',
+          demo: 'https://duck-checkers-182828240544.us-central1.run.app'
+      }
+  }
 ];
 
 export default posts;
