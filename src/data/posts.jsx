@@ -179,8 +179,9 @@ const posts = [
       code: 'https://github.com/dbarkowsky/DuckCheckers',
       demo: 'https://duck-checkers-182828240544.us-central1.run.app'
     }
-  }, {
-    title: 'Advent of Code 2025',
+  }, 
+  {
+    title: 'Advent of Code 2024',
     date: new Date('2025-01-03'),
     blurb: `Another year helping the elves`,
     paths: {

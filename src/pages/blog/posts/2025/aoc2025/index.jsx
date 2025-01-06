@@ -12,7 +12,7 @@ import SubtitleBlock from '@/components/posts/SubtitleBlock';
 import Link from 'next/link';
 
 const Sample = () => {
-  const currentPost = posts.find(post => post.title == "Advent of Code 2025");
+  const currentPost = posts.find(post => post.title == "Advent of Code 2024");
   return (
     <Grid container spacing={2} padding="1em" sx={{
       backgroundColor: colours.lightBackground,
