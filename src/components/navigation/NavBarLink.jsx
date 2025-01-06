@@ -1,16 +1,19 @@
 import Button from '@mui/material/Button';
+import Link from 'next/link';
 
-const NavBarLink = ({href, text}) => {
-    return (
-    <Button 
-        variant="text" 
-        href={href} 
-        sx={{ 
-            flexGrow: 0,
-            color: "white", 
+const NavBarLink = ({ href, text }) => {
+  return (
+    <Link href={href}>
+      <Button
+        variant="text"
+        sx={{
+          flexGrow: 0,
+          color: "white",
         }}>
         <b>{text}</b>
-    </Button>);
-}
+      </Button>
+    </Link>
+  );
+};
 
 export default NavBarLink;

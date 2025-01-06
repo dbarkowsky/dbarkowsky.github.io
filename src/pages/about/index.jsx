@@ -7,6 +7,7 @@ import HighlightBoxVideo from '@/components/common/HighlightBoxVideo';
 import PictureCombo from '@/components/posts/PictureCombo';
 import TextBlock from '@/components/posts/TextBlock';
 import Colours from '../../components/Colours';
+import Link from 'next/link';
 
 const About = () => {
     return (
@@ -25,7 +26,7 @@ const About = () => {
                 </p>
             </PictureCombo>
 
-            <TextBlock>When I create applications for my personal projects, you can read about them in detail on the <a href={'/blog'}>Blog page</a>, otherwise I encourage you to check out the<a href={'/resume'}> Resume page</a>.
+            <TextBlock>When I create applications for my personal projects, you can read about them in detail on the <Link href={'/blog'}>Blog page</Link>, otherwise I encourage you to check out the <Link href={'/resume'}>Resume page</Link>.
             </TextBlock>
 
             <TextBlock>I&apos;d love it if you want to chat in more detail about any projects, past or future, or even about hobby-related things. Find my contact info on the Resume page.

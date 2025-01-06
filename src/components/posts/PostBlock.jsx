@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardActionArea from '@mui/material/CardActionArea';
 import Button from '@mui/material/Button';
 import colours from '../Colours';
+import Link from 'next/link';
 
 const PostBlock = ({ title, date, blurb, paths }) => {
     const cardButtonStyle = {
@@ -33,7 +34,7 @@ const PostBlock = ({ title, date, blurb, paths }) => {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" href={paths.post} sx={cardButtonStyle}>More</Button>
+                <Link href={paths.post} style={cardButtonStyle}><Button size="small" sx={cardButtonStyle}>More</Button></Link>
                 {paths.code ? <Button size="small" href={paths.code} sx={cardButtonStyle}>Code</Button> : <></>}
                 {paths.demo ? <Button size="small" href={paths.demo} sx={cardButtonStyle}>Demo</Button> : <></>}
             </CardActions>
