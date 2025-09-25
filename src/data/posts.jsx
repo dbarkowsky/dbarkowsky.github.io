@@ -189,6 +189,17 @@ const posts = [
       post: '/blog/posts/2025/aoc2025',
       code: 'https://github.com/dbarkowsky/AdventOfCode',
     }
+  },
+  {
+    title: 'Obsidian and Quartz',
+    date: new Date('2025-04-27'),
+    blurb: `A quick wiki solution`,
+    paths: {
+      img: '/posts/2025/quartz/obsidian-logo.png',
+      post: '/blog/posts/2025/quartz',
+      demo: 'https://dbarkowsky.github.io/RecipeVault/',
+      code: 'https://github.com/dbarkowsky/RecipeVault'
+    }
   }
 ];
 
