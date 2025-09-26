@@ -200,6 +200,15 @@ const posts = [
       demo: 'https://dbarkowsky.github.io/RecipeVault/',
       code: 'https://github.com/dbarkowsky/RecipeVault'
     }
+  },
+  {
+    title: 'AI Vibes',
+    date: new Date('2025-07-14'),
+    blurb: `Thought dump on AI`,
+    paths: {
+      img: '/posts/2025/ai-1/ai.jpg',
+      post: '/blog/posts/2025/ai-1',
+    }
   }
 ];
 
