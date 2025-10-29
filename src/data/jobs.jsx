@@ -11,7 +11,8 @@ const jobs = [
             "Identifying and enforcing parking-related infractions",
             "Educating the public and responding to inquiring",
             "De-escalating high-conflict scenarios"
-        ]
+        ],
+        hidden: true,
     },
     {
         title: 'Video Timer',
@@ -23,7 +24,8 @@ const jobs = [
             "Using linguistic expertise to improve product quality",
             "Managing subtitle database and adding them to educational videos",
             "Identifying errors in translations and suggesting corrections"
-        ]
+        ],
+        hidden: true
     },
     {
         title: 'Night Auditor',
@@ -35,7 +37,8 @@ const jobs = [
             "Managing emergency situations",
             "Identifying and correcting discrepancies in guest accounts and transactions",
             "Using critical thinking to resolve issues with guests and computer systems"
-        ]
+        ],
+        hidden: true
     },
     {
         title: 'EFL Instructor',
@@ -46,7 +49,8 @@ const jobs = [
         points: [
             "Instructing students from ages 3-16 in English",
             "Planning lessons and applying existing curricula",
-        ]
+        ],
+        hidden: true
     },
     {
         title: 'Adult Tutor',
@@ -58,7 +62,8 @@ const jobs = [
             "Providing adults with education and job training",
             "Preparing one-on-one lessons and planning curricula",
             "Teaching ESL, Computers, Microsoft Office, GED, Math, English, and Customer Service"
-        ]
+        ],
+        hidden: true
     },
     {
         title: 'Technical Assistant',

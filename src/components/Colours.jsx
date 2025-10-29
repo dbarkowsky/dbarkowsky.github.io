@@ -21,7 +21,8 @@ const greyScale = {
     lightGrey: "#aaaaaa",
     darkGrey: "#555555",
     blackish: "#222222",
-    accent: "#083601"
+    accent: "#083601",
+    progress: "#118300ff"
 }
 
 export default {
@@ -31,6 +32,6 @@ export default {
     darkText: greyScale.blackish,
     highlight: greyScale.darkGrey,
     progressBarBackground: greyScale.lightGrey,
-    progressBarForeground: greyScale.accent,
+    progressBarForeground: greyScale.progress,
     accent: greyScale.accent
 };

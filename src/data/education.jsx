@@ -20,21 +20,24 @@ const education = [
         issuer: 'IPWEA & NAMS Canada',
         date: '2020',
         blurb: 'Learning how to track, evaluate, and appraise assets.',
-        importance: 0
+        importance: 0,
+        hidden: true
     },
     {
         certificate: 'CompTIA A+',
         issuer: 'CompTIA',
         date: '2019',
         blurb: 'Covered the basics of computer systems and hardware.',
-        importance: 0
+        importance: 0,
+        hidden: true,
     },
     {
         certificate: 'ITIL 4 Foundation',
         issuer: 'Axelos',
         date: '2019',
         blurb: 'Explored the ideologies and best practices centred around management of IT-related services.',
-        importance: 0
+        importance: 0,
+        hidden: true
     },
 ]
 
