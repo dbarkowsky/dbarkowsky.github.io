@@ -6,7 +6,9 @@ const NewSkillBlock = ({ text, logo, logoColour, link, rating = 0 }) => {
 
   return (
     <Tooltip title={link}>
-      <a href={link} target="_blank">
+      <a href={link} target="_blank" style={{
+        textDecoration: 'none'
+      }}>
       <Box
         sx={{
           gap: 3,

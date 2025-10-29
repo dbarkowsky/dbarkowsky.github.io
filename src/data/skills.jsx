@@ -29,7 +29,7 @@ export const langsAndLibraries = [
   {
     text: "Express",
     link: "https://expressjs.com/",
-    logo: "Express",
+    logo: "express",
     logoColour: "#ffffffff",
     rating: 10,
   },
@@ -231,7 +231,7 @@ export const tools = [
   {
     text: "Nginx",
     link: "https://www.nginx.com/",
-    logo: "Nginx",
+    logo: "nginx",
     rating: 8,
   },
   {
@@ -251,7 +251,7 @@ export const tools = [
   {
     text: "YAML",
     link: "https://yaml.org/",
-    logo: "YAML",
+    logo: "yaml",
     logoColour: "red",
     rating: 10,
   },
