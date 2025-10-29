@@ -1,3 +1,8 @@
+/**
+ * Omit the logoColour prop to use the svg's default colouring.
+ * The hidden prop can be set to true to not display the entry.
+ */
+
 
 export const langsAndLibraries = [
   {
