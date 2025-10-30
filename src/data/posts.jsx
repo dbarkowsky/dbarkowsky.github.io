@@ -209,6 +209,15 @@ const posts = [
       img: '/posts/2025/ai-1/ai.jpg',
       post: '/blog/posts/2025/ai-1',
     }
+  },
+  {
+    title: 'My AI Work',
+    date: new Date('2025-10-29'),
+    blurb: `What I've been working on`,
+    paths: {
+      img: '/posts/2025/ai-1/ai.jpg',
+      post: '/blog/posts/2025/ai-2',
+    }
   }
 ];
 
