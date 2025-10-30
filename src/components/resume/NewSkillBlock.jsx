@@ -25,7 +25,7 @@ const NewSkillBlock = ({ text, logo, logoColour, link, rating = 0 }) => {
 
         {/* Skill name and rating */}
         <Box sx={{ flexGrow: 1 }}>
-          <Box gap={1} display={'flex'} flexDirection={'row'} justifyContent={'start'}>{
+          <Box gap={1} display={'flex'} flexDirection={'row'} justifyContent={'start'} alignItems={'center'}>{
             <>
               {logo && <Box
                 sx={{
@@ -47,7 +47,7 @@ const NewSkillBlock = ({ text, logo, logoColour, link, rating = 0 }) => {
         }),
                 }}
               />}
-              <Typography fontSize={'0.8em'}>{text}</Typography>
+              <Typography fontSize={'1em'} fontFamily={'Noto Sans'}>{text}</Typography>
             </>
           }</Box>
 
@@ -57,8 +57,10 @@ const NewSkillBlock = ({ text, logo, logoColour, link, rating = 0 }) => {
             value={(rating / maxRating) * 100}
             sx={{
               height: 5,
+              width: 60,
               borderRadius: 2,
-              mt: 0.3,
+              margin: "2px auto",
+              // mt: 0.3,
               backgroundColor: "rgba(255,255,255,0.2)",
               "& .MuiLinearProgress-bar": {
                 backgroundColor: colours.progressBarForeground,
