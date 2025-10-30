@@ -215,8 +215,9 @@ const posts = [
     date: new Date('2025-10-29'),
     blurb: `What I've been working on`,
     paths: {
-      img: '/posts/2025/ai-1/ai.jpg',
+      img: '/posts/2025/ai-2/post.png',
       post: '/blog/posts/2025/ai-2',
+      code: 'https://github.com/bcgov/citz-imb-ai/tree/main'
     }
   }
 ];
