@@ -219,6 +219,16 @@ const posts = [
       post: '/blog/posts/2025/ai-2',
       code: 'https://github.com/bcgov/citz-imb-ai/tree/main'
     }
+  },
+  {
+    title: 'Wing Journal',
+    date: new Date('2026-04-03'),
+    blurb: `A Flutter app`,
+    paths: {
+      img: '/posts/2026/wing-journal/wing.png',
+      post: '/blog/posts/2026/wing-journal',
+      code: 'https://github.com/dbarkowsky/WingJournal'
+    }
   }
 ];
 
